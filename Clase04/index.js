@@ -2,15 +2,6 @@ const express = require("express");
 const userRoutes = require("./routes/users");
 require('./config/database')
 
-//app.get('/api', (req, res)=>{
-//  User.find().then((data)=>{
-//    console.log('Data: ', data)
-//    res.json(data)
-//  }).catch(error => {
-//    console.log(error)
-//  })
-//})
-
 const app = express();
 const port = process.env.PORT;
 

@@ -8,6 +8,8 @@ userRoutes.get("/", getAllUsers);
 //Capturar un parámetro
 userRoutes.get("/:id", getUserById);
 
+userRoutes.post("/", create)
+
 userRoutes.post("/", (req, res) => {
   const { error } = validateUser(req.body.nombre);
 
